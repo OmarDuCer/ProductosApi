@@ -172,4 +172,33 @@ Todos los demás endpoints siguen el mismo camino: **controlador → validación
 
 Pruebas ejecutadas el 01/11/2026 en Windows con Visual Studio 2026, .NET 10 y MySQL 8.0.45.
 
-_Agregar aquí capturas de pantalla de Swagger como evidencia._
+---
+
+## Evidencias (Swagger)
+
+### 1. Conexión — `GET /api/Conexion` → 200
+![Conexión a MySQL](capturas/01-conexion.png)
+
+### 2. Consultar todos — `GET /api/Productos` → 200
+![Consultar todos los productos](capturas/02-consultar-todos.png)
+
+### 3. Consultar por id — `GET /api/Productos/2` → 200
+![Consultar producto por id](capturas/03-consultar-por-id.png)
+
+### 4. Insertar — `POST /api/Productos` → 201 Created
+![Insertar producto](capturas/04-insertar.png)
+
+### 5. Actualizar — `PUT /api/Productos/7` → 200
+![Actualizar producto](capturas/05-actualizar.png)
+
+### 6. Buscar — `GET /api/Productos/buscar?termino=papel` → 200
+![Buscar productos](capturas/06-buscar.png)
+
+### 7. Eliminar — `DELETE /api/Productos/7` → 204 No Content
+![Eliminar producto](capturas/07-eliminar.png)
+
+### 8. Producto inexistente — `GET /api/Productos/999` → 404
+![Producto no encontrado](capturas/08-no-encontrado-404.png)
+
+### 9. Validación — `POST /api/Productos` con datos inválidos → 400
+![Validación de datos](capturas/09-validacion-400.png)
